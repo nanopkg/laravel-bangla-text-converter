@@ -18,9 +18,4 @@ class LaravelBanglaTextConverterServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-bangla-text-converter');
     }
-
-    public function registeringPackage()
-    {
-        $this->app->scoped(LaravelBanglaTextConverter::class);
-    }
 }

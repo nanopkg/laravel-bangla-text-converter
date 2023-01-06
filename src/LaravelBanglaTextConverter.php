@@ -15,7 +15,7 @@ class LaravelBanglaTextConverter
     public function toBijoy($string)
     {
         if (!is_string($string)) {
-            throw new \InvalidArgumentException(__CLASS__ . '::convert() expects parameter $string to be string, ' . gettype($string) . ' given!');
+            throw new \InvalidArgumentException('UnicodeToBijoyConverter::convert() expects parameter $string to be string, ' . gettype($string) . ' given!');
         }
 
         return (new UnicodeToBijoyConverter())->convert($string);
@@ -29,7 +29,7 @@ class LaravelBanglaTextConverter
     public function toUnicode($string)
     {
         if (!is_string($string)) {
-            throw new \InvalidArgumentException(__CLASS__ . '::convert() expects parameter $string to be string, ' . gettype($string) . ' given!');
+            throw new \InvalidArgumentException('BijoyToUnicodeConverter::convert() expects parameter $string to be string, ' . gettype($string) . ' given!');
         }
 
         return (new BijoyToUnicodeConverter())->convert($string);
