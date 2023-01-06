@@ -8,32 +8,6 @@ use Nanopkg\LaravelBanglaTextConverter\UnicodeToBijoy\UnicodeToBijoyConverter;
 class LaravelBanglaTextConverter
 {
     /**
-     * Loaded string
-     *
-     * @var string
-     */
-    protected $string;
-
-    /**
-     * Translator instances
-     *
-     * @var array
-     */
-    protected $translators = [];
-
-    /**
-     * Create a new BanglaTextConverter instance
-     *
-     * @param  string  $string The text to be converted
-     *
-     * @throws \InvalidArgumentException When passed parameter is not string
-     */
-    public function __construct($string)
-    {
-        $this->string = $string;
-    }
-
-    /**
      * Translate the loaded string to Bijoy ANSI
      *
      * @return string
