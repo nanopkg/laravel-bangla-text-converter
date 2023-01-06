@@ -18,7 +18,7 @@
         "phonetic",
         "bangla",
         "unicode to bijoy converter",
-        "bijoy to unicode converter",
+        "bijoy to unicode converter"
     ],
     "homepage": "https://github.com/nanopkg/laravel-bangla-text-converter",
     "license": "MIT",
