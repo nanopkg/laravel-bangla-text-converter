@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @method static string toBijoy(string $string)
  *
+ * @method static string toUnicode(string $string)
+ *
  * @see \Nanopkg\LaravelBanglaTextConverter\LaravelBanglaTextConverter
  */
 class LaravelBanglaTextConverter extends Facade
