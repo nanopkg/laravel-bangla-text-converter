@@ -4,6 +4,16 @@ namespace Nanopkg\LaravelBanglaTextConverter\UnicodeToBijoy;
 
 use Nanopkg\LaravelBanglaTextConverter\Contracts\Converter;
 
+
+/**
+ * UnicodeToBijoyConverter
+ *
+ * @author IQBAL HASAN <iqbalhasan.dev@gmail.com>
+ * @link https://iqbalhasan.dev Author Homepage
+ * @version 1.0.0
+ * @license LICENSE The MIT License
+ * @package nanopkg\laravel-bangla-text-converter
+ */
 class UnicodeToBijoyConverter implements Converter
 {
     /**
@@ -63,7 +73,7 @@ class UnicodeToBijoyConverter implements Converter
 
                 if ($count = mb_strlen($match[1])) {
                     $space = ' ';
-                    $key = $space.$key;
+                    $key = $space . $key;
                 }
 
                 $rule = KeyMapping::KAR_AROUND_CHAR_RULES[$key];
@@ -73,7 +83,7 @@ class UnicodeToBijoyConverter implements Converter
                 }
                 $rule = str_replace('<char>', $char, $rule);
 
-                return $space.$rule;
+                return $space . $rule;
             },
             $string
         );
@@ -97,12 +107,12 @@ class UnicodeToBijoyConverter implements Converter
             function ($match) {
                 // r($match);
                 $return = $match['kar'];
-                if (! empty($match['b'])) {
+                if (!empty($match['b'])) {
                     $return .= $match['b'];
                 }
                 $return .= $match['char'];
 
-                if (! empty($match['z'])) {
+                if (!empty($match['z'])) {
                     $return .= $match['z'];
                 }
 

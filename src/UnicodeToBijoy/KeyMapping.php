@@ -2,6 +2,16 @@
 
 namespace Nanopkg\LaravelBanglaTextConverter\UnicodeToBijoy;
 
+
+/**
+ * KeyMapping
+ *
+ * @author IQBAL HASAN <iqbalhasan.dev@gmail.com>
+ * @link https://iqbalhasan.dev Author Homepage
+ * @version 1.0.0
+ * @license LICENSE The MIT License
+ * @package nanopkg\laravel-bangla-text-converter
+ */
 class KeyMapping
 {
     /**

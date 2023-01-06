@@ -22,8 +22,9 @@ composer require nanopkg/laravel-bangla-text-converter
 <hr/>
 
 ```php
-$converter = new Nanopkg\LaravelBanglaTextConverter();
-echo $converter->toBijoy('আমার সোনার বাংলা, আমি তোমার ভালোবাসি।');
+$avro = 'আমার সোনার বাংলা, আমি তোমার ভালোবাসি।';
+$converter = Nanopkg\LaravelBanglaTextConverter\Facades\LaravelBanglaTextConverter::toBijoy($avro);
+return $converter;
 ```
 
 ### Convert Your Bijoy Text to unicode
@@ -31,8 +32,9 @@ echo $converter->toBijoy('আমার সোনার বাংলা, আম�
 <hr/>
 
 ```php
-$converter = new Nanopkg\LaravelBanglaTextConverter();
-echo $converter->toUnicode('Avgvi †mvbvi evsjv, Avwg †Zvgvi fv‡jvevwm|');
+$bijoy = 'Avgvi †mvbvi evsjv, Avwg †Zvgvi fv‡jvevwm|';
+$converter = Nanopkg\LaravelBanglaTextConverter\Facades\LaravelBanglaTextConverter::toUnicode($bijoy);
+return $converter;
 ```
 
 ## Testing

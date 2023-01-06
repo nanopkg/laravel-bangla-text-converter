@@ -4,6 +4,16 @@ namespace Nanopkg\LaravelBanglaTextConverter\BijoyToUnicode;
 
 use Nanopkg\LaravelBanglaTextConverter\Contracts\Converter;
 
+/**
+ * BijoyToUnicodeConverter
+ *
+ * @author IQBAL HASAN <iqbalhasan.dev@gmail.com>
+ * @link https://iqbalhasan.dev Author Homepage
+ * @version 1.0.0
+ * @license LICENSE The MIT License
+ * @package nanopkg\laravel-bangla-text-converter
+ *
+ */
 class BijoyToUnicodeConverter implements Converter
 {
     /**
@@ -38,13 +48,13 @@ class BijoyToUnicodeConverter implements Converter
     {
         switch ($match[1]) {
             case 'w':
-                return $match[2].'ি'; // E~ kar
+                return $match[2] . 'ি'; // E~ kar
             case '†':
-                return $match[2].'ে'; // A~ kar
+                return $match[2] . 'ে'; // A~ kar
             case 'ˆ':
-                return $match[2].'ৈ'; // A~ kar
+                return $match[2] . 'ৈ'; // A~ kar
             case '‡':
-                return $match[2].'ে'; // A~ Kar ( Bijoy has 2 of 'em )
+                return $match[2] . 'ে'; // A~ Kar ( Bijoy has 2 of 'em )
         }
     }
 }
