@@ -4,7 +4,6 @@ namespace Nanopkg\LaravelBanglaTextConverter;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Nanopkg\LaravelBanglaTextConverter\Facades\LaravelBanglaTextConverter;
 
 class LaravelBanglaTextConverterServiceProvider extends PackageServiceProvider
 {
