@@ -1,6 +1,6 @@
 <?php
 
-namespace App\BanglaTextConverter\Translator\UnicodeToBijoy;
+namespace Nanopkg\LaravelBanglaTextConverter\UnicodeToBijoy;
 
 class KeyMapping
 {
