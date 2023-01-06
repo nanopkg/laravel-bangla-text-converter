@@ -3,6 +3,7 @@
 namespace Nanopkg\LaravelBanglaTextConverter\UnicodeToBijoy;
 
 use Nanopkg\LaravelBanglaTextConverter\Contracts\Converter;
+use Nanopkg\LaravelBanglaTextConverter\UnicodeToBijoy\KeyMapping;
 
 class UnicodeToBijoyConverter implements Converter
 {
