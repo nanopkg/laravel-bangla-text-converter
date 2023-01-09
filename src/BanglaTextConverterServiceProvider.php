@@ -1,12 +1,20 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Nanopkg\BanglaTextConverter;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+/**
+ * BanglaTextConverterServiceProvider
+ *
+ * @author IQBAL HASAN <iqbalhasan.dev@gmail.com>
+ *
+ * @link https://iqbalhasan.dev Author Homepage
+ *
+ * @license LICENSE The MIT License
+ */
+class BanglaTextConverterServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +24,6 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->name('laravel-bangla-text-converter');
     }
 }

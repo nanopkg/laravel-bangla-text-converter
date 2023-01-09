@@ -1,17 +1,35 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "nanopkg/laravel-bangla-text-converter",
+    "description": "This is Laravel's Bengali text converter package. Through this package, you can easily convert text from Unicode to Bijoy in your Laravel application and convert Bijoy to Unicode.",
     "keywords": [
-        ":vendor_name",
+        "nanopkg",
         "laravel",
-        ":package_slug"
+        "laravel-bangla-text-converter",
+        "iqbalhasandev",
+        "iqbalhasan.dev",
+        "unicode",
+        "bijoy to avro",
+        "avro to bijoy",
+        "unicode to bijoy",
+        "bijoy to unicode",
+        "bijoy",
+        "avro",
+        "phonetic",
+        "bangla",
+        "unicode to bijoy converter",
+        "bijoy to unicode converter",
+        "package",
+        "library",
+        "Plugin",
+        "laravel-package",
+        "composer"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/nanopkg/laravel-bangla-text-converter",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "IQBAL HASAN",
+            "email": "iqbalhasan.dev@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +53,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Nanopkg\\BanglaTextConverter\\": "src",
+            "Nanopkg\\BanglaTextConverter\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Nanopkg\\BanglaTextConverter\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,10 +79,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Nanopkg\\BanglaTextConverter\\BanglaTextConverterServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "BanglaTextConverter": "Nanopkg\\BanglaTextConverter\\Facades\\BanglaTextConverter"
             }
         }
     },
