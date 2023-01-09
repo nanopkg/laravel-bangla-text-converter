@@ -20,6 +20,6 @@ class BanglaTextConverter extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Nanopkg\LaravelBanglaTextConverter\BanglaTextConverter::class;
+        return \Nanopkg\BanglaTextConverter\BanglaTextConverter::class;
     }
 }
