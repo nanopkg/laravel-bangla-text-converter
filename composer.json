@@ -53,8 +53,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Nanopkg\\BanglaTextConverter\\": "src",
-            "Nanopkg\\BanglaTextConverter\\Database\\Factories\\": "database/factories"
+            "Nanopkg\\BanglaTextConverter\\": "src"
         }
     },
     "autoload-dev": {
